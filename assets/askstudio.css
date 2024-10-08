@@ -89,11 +89,114 @@ em {
 
 }
 
+.invisible {
+    display: none;
+}
+
+/* SITE HEADER ****************************************/
+
+.site-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1000px) {
+    .site-header {
+        padding: 32px;
+        border: none;
+    }
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    height: 40px;
+}
+
+.logo svg {
+    display: block;
+    width: 78px;
+    height: 28px;
+}
+
+.logo__text {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #7D2EC2;
+    user-select: none;
+}
+
+.logo__text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: -12px;
+    width: 1px;
+    height: 40px;
+    background-color: #D8B8FA;
+}
+
+.site-header__nav {
+    display: none;
+}
+@media only screen and (min-width: 1000px) {
+    .site-header__nav {
+        display: block;
+    }
+}
+
+.site-header__menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.site-header__menu__link {
+    color: #323232;
+}
+
+.site-header__menu__link:hover {
+    color: #7D2EC2;
+    border-bottom: 2px solid #7D2EC2;
+}
+
+.btn-login {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #6A2B9E;
+    padding: 10px 16px 10px 40px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: center left 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none'%3E%3Cpath fill='%236A2B9E' d='M5.75 14.607a.75.75 0 0 0-1.5 0h1.5Zm-.737.566.746-.076-.746.076Zm1.905 2.176-.174.73.174-.73Zm.56.088-.1.744.1-.744Zm5.493.733.1-.744-.1.744Zm2.953.071-.277-.697.277.697Zm1.257-1.1.654.367-.654-.367Zm0-13.401.654-.367-.654.367Zm-1.257-1.1-.277.696.277-.697Zm-2.953.07.1.744-.1-.743Zm-5.493.733-.1-.743.1.743Zm-.56.088.175.73-.175-.73ZM5.013 5.707l.746.077-.746-.077Zm-.763.566a.75.75 0 0 0 1.5 0h-1.5Zm6.28.303a.75.75 0 1 0-1.06 1.061l1.06-1.06Zm2.273 4.394a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm1.06 0a.75.75 0 1 0-1.06-1.06l1.06 1.06ZM9.47 13.243a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm3.863-2.053a.75.75 0 0 0 0-1.5v1.5ZM2.5 9.69a.75.75 0 0 0 0 1.5v-1.5Zm1.75 4.917c0 .275-.001.468.017.643l1.492-.153c-.008-.08-.009-.18-.009-.49h-1.5Zm.017.643a3.25 3.25 0 0 0 2.477 2.829l.349-1.459a1.75 1.75 0 0 1-1.334-1.523l-1.492.153Zm2.477 2.829c.17.04.362.065.635.102l.198-1.487a5.653 5.653 0 0 1-.484-.074l-.35 1.459Zm.635.102 5.493.732.198-1.487-5.493-.732-.198 1.487Zm5.493.732c.769.103 1.393.186 1.9.21.513.024.983-.008 1.429-.185l-.555-1.394c-.16.064-.385.1-.804.08-.428-.02-.977-.092-1.772-.198l-.198 1.487Zm3.329.025a3.25 3.25 0 0 0 1.634-1.43l-1.309-.734a1.75 1.75 0 0 1-.88.77l.555 1.394Zm1.634-1.43c.235-.42.328-.88.372-1.393.044-.505.043-1.135.043-1.91h-1.5c0 .802 0 1.355-.037 1.782-.036.418-.102.636-.187.787l1.309.733Zm.415-3.303v-7.53h-1.5v7.53h1.5Zm0-7.53c0-.775 0-1.404-.043-1.91-.044-.512-.137-.973-.372-1.392l-1.309.733c.085.151.15.37.187.788.036.426.037.98.037 1.782h1.5Zm-.415-3.302a3.25 3.25 0 0 0-1.634-1.43l-.554 1.393c.373.148.683.42.88.77l1.308-.733ZM16.2 1.943c-.446-.178-.916-.21-1.43-.186-.506.024-1.13.108-1.899.21l.198 1.487c.795-.106 1.344-.179 1.772-.199.42-.02.644.017.804.081l.555-1.394Zm-3.329.024L7.38 2.7l.198 1.486 5.493-.732-.198-1.487ZM7.38 2.7c-.273.036-.464.06-.635.101l.349 1.46c.078-.02.176-.033.484-.075L7.38 2.7Zm-.635.101a3.25 3.25 0 0 0-2.477 2.83l1.492.153A1.75 1.75 0 0 1 7.093 4.26l-.35-1.459Zm-2.477 2.83c-.018.174-.017.368-.017.642h1.5c0-.31.001-.41.01-.49l-1.493-.152ZM9.47 7.637l3.333 3.333 1.06-1.06-3.333-3.334-1.06 1.061Zm3.333 2.273L9.47 13.243l1.06 1.06 3.334-3.333-1.061-1.06Zm.53-.22H2.5v1.5h10.833v-1.5Z'/%3E%3C/svg%3E");
+}
+
+.btn-login:hover {
+    background-color: #F3E9FE;
+}
+
 /* HERO SECTION ***************************************/
 
 .hero {
     display: flex;
     flex-direction: column;
+    margin-top: 56px;
 }
 @media only screen and (min-width: 1000px) {
     .hero {
@@ -102,7 +205,6 @@ em {
 }
 
 .hero__carousel {
-    background-color: #efefef;
     width: 100%;
     height: 300px;
 }
