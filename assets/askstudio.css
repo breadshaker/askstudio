@@ -76,19 +76,6 @@ em {
 	font-style: italic;
 }
 
-@media only screen and (min-width: 760px) {
-
-}
-@media only screen and (min-width: 1000px) {
-
-}
-@media only screen and (min-width: 1280px) {
-
-}
-@media only screen and (min-width: 1800px) {
-
-}
-
 .invisible {
     display: none;
 }
@@ -252,69 +239,6 @@ em {
     font-weight: 700;
     border-radius: 8px;
 }
-/* 
-.glide__slide {
-    transform: scale(0.8);
-}
-
-.glide__slide--active {
-    transform: scale(1);
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
-}
-
-.glide__bullets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-}
-
-.glide__bullet {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: none;
-    padding: 0;
-    background: rgba(0,0,0,0.2);
-    cursor: pointer;
-}
-
-.glide__bullet:not(.glide__bullet--active):hover {
-    background: rgba(0,0,0,0.4);
-}
-
-.glide__bullet--active {
-    background-color: #923EDF;
-}
-
-.glide__arrow {
-    height: 100%;
-    width: 10%;
-    background-color: transparent;
-    opacity: 0.6;
-    border: none;
-    text-indent: -9999px;
-}
-@media only screen and (min-width: 1000px) {
-    .glide__arrow {
-        width: 20%;
-    }
-}
-
-.glide__arrow--left {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.glide__arrow--right {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-     */
 
 .video-thumb {
     position: relative;
@@ -361,42 +285,6 @@ em {
     object-fit: cover;
     border-radius: 16px;
 }
-
-/* .carousel {
-    padding: 100px 0;
-}
-
-.tns-item {
-    width: 276px;
-    height: 128px;
-    display: inline-flex !important;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin-top: 14px;
-}
-@media only screen and (min-width: 1000px) {
-    .tns-item {
-        width: 640px;
-        height: 288px;
-        margin-top: 36px;
-    }
-}
-
-.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active { 
-    height: 156px;
-    margin-top: 0;
-}
-@media only screen and (min-width: 1000px) {
-    .tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active { 
-        height: 360px;
-    }
-}
-
-.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .video-thumb:before,
-.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active .video-thumb:after { 
-    visibility: visible;
-} */
 
 .swiper-container {
     width: 100%;
