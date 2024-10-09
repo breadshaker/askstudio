@@ -17,6 +17,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+
         <link href="assets/askstudio.css" rel="stylesheet">
 
 	</head>
@@ -38,14 +40,129 @@
                 </ul>
             </nav>
         </header>
+
         <section class="hero">
-            <div class="hero__carousel">Carousel</div>
+            <div class="hero__carousel">
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/640/360?random=1" alt="">
+                            <div class="videothumb">
+                                <button class="videothumb__btn">Spill av</button>
+                                <div class="videothumb__title"><strong>Fysikk 1:</strong> Faseoverganger</div>
+                                <div class="videothumb__duration">3:17</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/640/360?random=2" alt="">
+                            <div class="videothumb">
+                                <button class="videothumb__btn">Spill av</button>
+                                <div class="videothumb__title"><strong>Fysikk 1:</strong> Faseoverganger</div>
+                                <div class="videothumb__duration">3:17</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/640/360?random=3" alt="">
+                            <div class="videothumb">
+                                <button class="videothumb__btn">Spill av</button>
+                                <div class="videothumb__title"><strong>Fysikk 1:</strong> Faseoverganger</div>
+                                <div class="videothumb__duration">3:17</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/640/360?random=4" alt="">
+                            <div class="videothumb">
+                                <button class="videothumb__btn">Spill av</button>
+                                <div class="videothumb__title"><strong>Fysikk 1:</strong> Faseoverganger</div>
+                                <div class="videothumb__duration">3:17</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/640/360?random=5" alt="">
+                            <div class="videothumb">
+                                <button class="videothumb__btn">Spill av</button>
+                                <div class="videothumb__title"><strong>Fysikk 1:</strong> Faseoverganger</div>
+                                <div class="videothumb__duration">3:17</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://picsum.photos/640/360?random=6" alt="">
+                            <div class="videothumb">
+                                <button class="videothumb__btn">Spill av</button>
+                                <div class="videothumb__title"><strong>Fysikk 1:</strong> Faseoverganger</div>
+                                <div class="videothumb__duration">3:17</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
             <div class="hero__content">
                 <h1 class="hero__headline">Din nye kollega underviser kompetansemålene på video</h1>
                 <p class="hero__text">Brukes ved behov – eller hele tiden.</p>
                 <a href="#" class="hero__btn">Prøv gratis nå</a>
             </div>
         </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                centeredSlides: true,
+                loop: true,
+                speed: 500,
+                slidesPerView: 1.6,
+                spaceBetween: 48,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+
+                    480: {
+                        spaceBetween: 60,
+                    },
+                    640: {
+                        spaceBetween: 80,
+                    },
+                    840: {
+                        spaceBetween: 120,
+                    },
+                    1000: {
+                        slidesPerView: 2,
+                        spaceBetween: 120,
+                    },
+                    1280: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 120,
+                    },
+                    1440: {
+                        slidesPerView: 2.4,
+                        spaceBetween: 120,
+                    },
+                    1600: {
+                        slidesPerView: 2.6,
+                        spaceBetween: 120,
+                    },
+                    1740: {
+                        slidesPerView: 2.8,
+                        spaceBetween: 120,
+                    },
+                    1920: {
+                        slidesPerView: 2.8,
+                        spaceBetween: 160,
+                    },
+                },
+            });
+        </script>
 
 	</body>
 </html>
